@@ -1,0 +1,90 @@
+﻿
+#frame {/*----------图片轮播相框容器----------*/			
+    position: absolute; /*--绝对定位，方便子元素的定位*/			
+	width: 800px;			
+	height: 450px;			
+	overflow: hidden;/*--相框作用，只显示一个图片---*/			
+	border-radius:10px;		
+	margin-left:100px;
+    box-shadow:8px 8px 40px 2px #a2a2a2;
+}				
+#photos img {			
+    float: left;			
+	width:800px;			
+	height:450px;		
+}		
+#photos {/*---设置总的图片宽度--通过位移来达到轮播效果----*/			
+    position: absolute;
+	z-index:9px;			
+	width: calc(800px * 10);
+	/*---修改图片数量的话需要修改下面的动画参数*/		
+}		
+.play{			
+    animation: ma 20s ease-out infinite alternate;/**/		
+}		
+@keyframes ma {/*---每图片切换有两个阶段：位移切换和静置。中间的效果可以任意定制----*/			
+    0%,10% {		
+	margin-left: 0px;		
+}			
+    10%,20% {		
+	margin-left: -800px;	
+}			
+    20%,30% {		
+	margin-left: -1600px;	
+}			
+    30%,40% {		
+	margin-left: -2400px;	
+}			
+    40%,50% {		
+	margin-left: -3200px;	
+}		    
+    50%,60% {		
+	margin-left: -4000px;	
+}	
+    60%,70% {		
+	margin-left: -4800px;	
+}	
+    70%,80% {		
+	margin-left: -5600px;	
+}	
+    80%,90% {		
+	margin-left: -6400px;	
+}	
+    90%,100% {		
+	margin-left: -7200px;	
+}	
+
+}		
+@keyframes ma1 {0%{margin-left:-5600px;}100%{margin-left:-0px;}	}		
+@keyframes ma2 {0%{margin-left:-5600px;}100%{margin-left:-800px;}	}		
+@keyframes ma3 {100%{margin-left:-1600px;}	}		
+@keyframes ma4 {100%{margin-left:-2400px;}	}		
+@keyframes ma5 {100%{margin-left:-3200px;}	}
+@keyframes ma6 {100%{margin-left:-4000px;}	}
+@keyframes ma7 {100%{margin-left:-4800px;}	}
+@keyframes ma8 {100%{margin-left:-5600px;}	}
+
+.bottom{
+	width:1050px;
+	height:50px;
+}
+
+.m-list{
+	margin-top:20px;
+	height:400px;
+}
+.m-list li{
+	text-align:center;
+	font-family:STFangSong;
+	font-size:18px;
+}
+
+.d-list{
+	margin-top:20px;
+	height:400px;
+}
+.d-list li{
+	text-align:center;
+	font-family:STFangSong;
+	font-size:18px;
+}

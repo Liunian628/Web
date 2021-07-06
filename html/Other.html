@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Satisfaction</title>
+  
+  <!-- pages icon -->
+<link rel="shortcut icon" href="images/L.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/f0601b0fb2.js" crossorigin="anonymous"></script>
+<script type='module' src='https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js'></script>
+<script nomodule='' src='https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js'></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="../css/Other_css/style_list.css">
+
+</head>
+<body>
+
+<div class="container">
+  <div class="components">
+  
+  
+    <div class="clock">
+      <div class="hand hours"></div>
+      <div class="hand minutes"></div>
+      <div class="hand seconds"></div>
+      <div class="point"></div>
+      <div class="marker">
+        <span class="marker__1"></span>
+        <span class="marker__2"></span>
+        <span class="marker__3"></span>
+        <span class="marker__4"></span>
+      </div>
+    </div>
+  
+    <div class="form">
+      <input type="text" class="form__input" placeholder="YOUR NAME">
+    </div>
+	
+	 <div class="segmented-control">
+      
+      <input type="radio" name="radio2" value="3" id="tab-1" checked/>
+      <label for="tab-1" class= "segmented-control__1">
+        <p>MALE</p></label>
+      
+      <input type="radio" name="radio2" value="4" id="tab-2" />
+      <label for="tab-2" class= "segmented-control__2">
+        <p>FEMALE</p></label>
+
+      <div class="segmented-control__color"></div>
+    </div>
+	
+	<div class="form">
+      <input type="text" class="form__input" placeholder="YOUR PHONENUMBER">
+    </div>
+	
+	 <div class="switch" style="width:280px;">
+      <label class="browse">BROWSE</label>
+      <div class="switch__2" style="margin-top:-30px;">
+        <input id="switch-2" type="checkbox" checked>
+        <label for="switch-2"></label>
+      </div>
+    </div>
+	
+	 <div class="slider">
+	 
+	  <label class="satisfaction">SATISFACTION</label>
+	 
+      <div class="slider__box" style="margin-top:-16px;">
+        <span class="slider__btn" id="find"></span>
+        <span class="slider__color"></span>
+        <span class="slider__tooltip">50%</span>
+      </div>
+    </div>
+	
+	 <div class="form" style="margin-top:40px;">
+      <textarea class="form__input" placeholder="YOUR SUGGESTION" rows='5' cols='50' maxlength="250" style="width:470px;height:100px;line-height:30px;" ></textarea>
+     </div>
+	
+	 <div class="btn btn__primary"><p>Button</p></div>
+	
+  </div>
+  
+</div>
+	
+
+  
+  
+
+
+<script src="../js/Other_js/script_list.js"></script>
+
+
+</body>
+</html>

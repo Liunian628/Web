@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap");
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link {
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+  font-size: 3em;
+  color: #808080;
+  text-transform: uppercase;
+  transition: color 275ms ease;
+}
+.link:hover {
+  color: #333;
+}
+.link:hover ~ .hover-container .link-text {
+  opacity: 1;
+}
+.link:hover ~ .hover-container .image-container {
+  opacity: 1;
+}
+
+.link-text {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 3em;
+  color: #fff;
+  text-transform: uppercase;
+  pointer-events: none;
+  -webkit-clip-path: circle(75px at var(--x) var(--y));
+          clip-path: circle(75px at var(--x) var(--y));
+  opacity: 0;
+  transition: opacity 250ms ease;
+}
+
+.image-container {
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  transition: opacity 250ms ease;
+}
+
+.image-inner {
+  position: absolute;
+  top: -75px;
+  left: -75px;
+  width: 150px;
+  height: 150px;
+}
+
+.link-image {
+  display: block;
+  max-width: 100%;
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+  filter: brightness(0.9);
+}
+
+
+/* ---photo--- */
+
+@charset "utf-8";
+
+@import url("https://s2.pstatp.com/cdn/expire-1-M/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.border {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+.border:hover {
+  border: 1px solid #fff;
+}
+.card {
+  height: 379px;
+  width: 300px;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top:8%;
+  margin-left:5%;
+}
+
+.card2 {
+  background: url("../../images/wuhan_photo.jpg") center center no-repeat;
+  background-size: 300px;
+}
+.card2:hover {
+  background: url("../../images/wuhan_photo.jpg") left center no-repeat;
+  background-size: 600px;
+}
+.card2:hover h2 {
+  opacity: 1;
+}
+.card2:hover .fa {
+  opacity: 1;
+}
+.photo{
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.fa {
+  opacity: 0;
+  transition: opacity 1s;
+}

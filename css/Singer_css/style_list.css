@@ -1,0 +1,92 @@
+:root {
+    --bg: hsl(260, 24%, 7%);
+    --odd:#D6D3CD;
+    --even:#C7C3BD;
+    --border: hsl(259, 27%, 9%);
+    --tableText: hsl(0, 0%, 94%);
+    --tableTextH: hsl(259, 25%, 40%);
+}
+
+
+main, .util {
+    margin: 50px 40%;
+    display: grid;
+    grid-gap: 40px;
+	margin-left:40%;
+	margin-left:32%;
+}
+
+input[type="file"] {
+    color: hsl(260, 24%, 67%);
+    text-indent: 10px;
+}
+
+input[type="search"] {
+    color: var(--tableTextH);
+    background: transparent;
+    border: 2px #9f9f9f solid;
+    padding: 10px 20px;
+	width:300px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+	outline:none;
+	transition:.3s all;
+	
+}
+
+input[type="search"]:hover {
+   
+    background: #fff;
+    border: 2px #9f9f9f solid;
+
+	
+}
+
+
+table {
+    color: #000;
+    border:none;
+    border-collapse: collapse;
+	width:580px;
+}
+
+th {
+    font-size: 1.3rem;
+    text-align: left;
+    color: var(--tableTextH);
+    background: transparent;
+    padding: 10px 20px;
+	border-top:2px #9a9a9a solid;
+}
+
+td {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    padding: 10px 20px;
+    border-top: 2px solid var(--odd);
+}
+
+td.name {
+    text-align: center;
+    width: 20%;
+}
+
+
+
+tr:nth-child(odd) {
+    background: transparent;
+}
+
+tr:nth-child(even) {
+    background: transparent;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 760px) {
+    body {
+        margin: 20px 50px 200px;
+    }
+}
